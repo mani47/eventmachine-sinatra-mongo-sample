@@ -4,9 +4,13 @@ Sample non-blocking web app to measure performance of Event Machine and Mongo DB
 # Installation
 
 gem install sinatra
+
 gem install eventmachine
+
 gem install em-mongo
+
 gem install thin
+
 gem install bson
 
 # Start Server
@@ -14,5 +18,7 @@ gem install bson
 ruby run.rb
 
 # Benchmark 
+
+Install Apache Benchmark and then run:
 
 ab -n 10000 -c 200 http://127.0.0.1:8181/insert
